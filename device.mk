@@ -348,6 +348,7 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     WifiOverlay
 
 # Telephony
