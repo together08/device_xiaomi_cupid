@@ -218,6 +218,10 @@ on boot
     chown -h vendor_qdss /sys/bus/coresight/devices/coresight-tmc-etr/block_size
     chmod 660 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
 
+    # Set xiaomi touch permissions
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
