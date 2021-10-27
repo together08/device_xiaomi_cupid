@@ -10,3 +10,6 @@ DEVICE_PATH := device/xiaomi/cupid
 
 # Inherit from proprietary files
 include vendor/xiaomi/cupid/BoardConfigVendor.mk
+
+# Screen density
+TARGET_SCREEN_DENSITY := 440
