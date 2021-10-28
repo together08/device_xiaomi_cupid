@@ -7,3 +7,6 @@
 BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/cupid
+
+# Inherit from proprietary files
+include vendor/xiaomi/cupid/BoardConfigVendor.mk
