@@ -331,6 +331,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
