@@ -186,6 +186,12 @@ VENDOR_SECURITY_PATCH := 2022-03-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Soong
+SOONG_CONFIG_NAMESPACES += xiaomiSm8450Vars
+SOONG_CONFIG_xiaomiSm8450Vars += \
+    vibrator_use_effect_stream
+SOONG_CONFIG_xiaomiSm8450Vars_vibrator_use_effect_stream ?= false
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
