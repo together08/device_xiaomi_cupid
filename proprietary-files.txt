@@ -1286,6 +1286,10 @@ vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
 
+# NFC
+vendor/lib/libsn100u_fw.so
+vendor/lib/libsn220u_fw.so
+
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
 vendor/bin/msm_irqbalance
