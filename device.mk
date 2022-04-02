@@ -173,6 +173,9 @@ PRODUCT_PACKAGES += \
     memtrack.default
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti
+
+PRODUCT_PACKAGES += \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor
 
@@ -181,7 +184,6 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4-service.widevine \
     liboemcrypto
@@ -537,15 +539,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules/vendor_boot,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules/vendor_dlkm,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail_32 \
-    libdisplayconfig.qti \
-    libnl \
-    libqdMetaData \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
