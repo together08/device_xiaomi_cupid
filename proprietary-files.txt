@@ -362,6 +362,12 @@ vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/CAMERA_ICP_480.elf
+vendor/firmware/cupid_imx766_bu24618_ois.coeff
+vendor/firmware/cupid_imx766_bu24618_ois.mem
+vendor/firmware/cupid_imx766_bu24618_ois.prog
+vendor/firmware/cupid_wide_bu24618_ois.coeff
+vendor/firmware/cupid_wide_bu24618_ois.mem
+vendor/firmware/cupid_wide_bu24618_ois.prog
 
 # Camera-sensors
 vendor/lib64/libjpege.so
