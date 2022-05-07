@@ -1333,6 +1333,9 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
+# Vibrator firmware
+vendor/firmware/aw8697_haptic.bin
+
 # VPP
 vendor/bin/hw/qconfigservice
 vendor/bin/vppservice
