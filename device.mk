@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -173,6 +174,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # DTB
@@ -193,6 +195,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor
+
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
@@ -261,6 +266,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor
+
 # Livedisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
@@ -310,6 +320,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
@@ -319,6 +332,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.2.vendor
 
@@ -378,6 +392,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.6.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
