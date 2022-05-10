@@ -104,8 +104,12 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/waipio_GKI.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
-BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 loop.max_part=7 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=0 pcie_ports=compat iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 video=vfb:640x400,bpp=32,memsize=3072000
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += bootconfig
+BOARD_BOOTCONFIG += androidboot.console=ttyMSM0
+BOARD_BOOTCONFIG += androidboot.hardware=qcom
+BOARD_BOOTCONFIG += androidboot.memcg=1
+BOARD_BOOTCONFIG += androidboot.usbcontroller=a600000.dwc3
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
 TARGET_KERNEL_APPEND_DTB := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
