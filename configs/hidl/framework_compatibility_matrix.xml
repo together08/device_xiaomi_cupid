@@ -26,6 +26,7 @@
             <name>IComponentStore</name>
             <instance>default</instance>
             <instance>software</instance>
+            <instance>dolby</instance>            
         </interface>
     </hal>
     <hal format="hidl" optional="true">
