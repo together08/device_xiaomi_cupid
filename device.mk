@@ -528,7 +528,8 @@ PRODUCT_COPY_FILES += \
 
 # Vendor boot modules
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules/vendor_boot,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules/vendor_dlkm,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
 
 # WiFi Display
 PRODUCT_PACKAGES += \
