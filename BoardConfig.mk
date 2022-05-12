@@ -105,7 +105,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/waipio_GKI.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
-BOARD_KERNEL_CMDLINE += bootconfig
 BOARD_BOOTCONFIG += androidboot.console=ttyMSM0
 BOARD_BOOTCONFIG += androidboot.hardware=qcom
 BOARD_BOOTCONFIG += androidboot.memcg=1
